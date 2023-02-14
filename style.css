@@ -1,0 +1,823 @@
+/*===============================
+            global styles
+=================================*/
+
+/*variabler för färger*/
+:root
+{
+    --serveringsfatsvitt: #E5E9EC;
+    --glasyrblue:#A5DAD8;
+    --glasyryellow:#DBDA21;
+    --morkchokladdarkbrow: #140A08;
+    --glasyrdarkgreen: #091D1E;
+    --transparent: rgba(255,255,255,.5);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--serveringsfatsvitt);
+}
+
+a
+{
+
+    text-decoration: none;
+}
+
+/*===============================
+            typography
+=================================*/
+
+h1,
+h2,
+.visit-btn,
+.logo-span,
+form
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3,
+p,
+.link-btn,
+.logo-title,
+.hero-title
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p,
+li
+{
+    line-height: 150%
+}
+
+.current-page
+{
+    font-weight: bolder;
+}
+
+.hero-presentation
+{
+    text-align: center;
+    max-width: 300px;
+}
+
+.hero-title,
+.hero-column-right p
+{
+    text-align: center;
+}
+
+.menu,
+.contact-spec
+{
+    list-style: none;
+}
+
+/*===============================
+            color
+=================================*/
+h1,
+h2,
+h3,
+p,
+a
+{
+    color: var(--glasyrdarkgreen);
+}
+
+.creators-p
+{
+    color: var(--serveringsfatsvitt);
+}
+
+header,
+.hero-container
+{
+    background-color: rgba(229,233,236,0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+input[type=submit],
+.visit-btn
+{
+    background-color: var(--glasyrblue);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.nav-icon
+{
+    background: var(--morkchokladdarkbrow);
+}
+
+.nav-icon:before,
+.nav-icon:after
+{
+    background:var(--glasyrdarkgreen);
+}
+
+.contact-main,
+footer
+{
+    background-color: var(--glasyryellow);
+}
+
+.fromthecreators
+{
+    background-color: var(--glasyrdarkgreen);
+}
+
+form fieldset label input[type=text],
+textarea
+{
+    background: none;
+    border: 1px solid var(--morkchokladdarkbrow);
+}
+
+/*
+    button animation
+*/
+.visit-btn:hover,
+.link-btn:hover,
+input[type=submit]:hover,
+.visit-btn:focus,
+.link-btn:focus
+{
+    background-color: var(--glasyrdarkgreen);
+    color: var(--serveringsfatsvitt);
+}
+
+/*===============================
+            layout
+=================================*/
+
+
+.header-container,
+.main-container,
+.footer-container,
+.creators-container
+{
+    max-width: 1300px;
+}
+
+
+header,
+.header-container,
+.main-container,
+.intro-container,
+.contact-container-top,
+.footer-container,
+.creators-container
+{
+    width: 100%;
+}
+
+.header-container,
+.hero-container,
+.main-container,
+.footer-container,
+.creators-container
+{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+header
+{
+    padding-top:1rem;
+    /*Här fixerar menyn så att den följer med*/
+    position: fixed;
+    /*Gör så att denna element kommer framför alla, längst fram*/
+    z-index: 3;
+    /*Detta gör att nav-baren håller sig i mitten*/
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.logo
+{
+    width: 3.5rem;
+}
+
+.menu
+{
+    margin-left: auto;
+    /*detta gör att man kan scrolla när menyn
+    är utfälld i mobilläge*/
+    /* overflow-y:scroll; */
+    overflow-x:hidden;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.ornament-green
+{
+    background-image: url(objects/ikoner_prjk_arb_webb_ornament-green.svg);
+}
+
+.ornament-brown
+{
+    background-image: url(objects/ikoner_prjk_arb_webb_ornament-brown.svg);
+}
+
+.ornament-brown,
+.ornament-green
+{
+    /*detta gör att svg-filen kan växa
+    vågrätt*/
+    background-repeat: repeat-x;
+    background-position: center left;
+    padding: 2rem 0;
+    background-size: cover;
+}
+
+.hem-hero
+{
+    background-image: url(images/american-heritage-chocolate-ghtwiDUu5ro-unsplash.jpg);
+}
+
+.bak-hero
+{
+    background-image: url(images/brooke-lark-pGM4sjt_BdQ-unsplash.jpg);
+}
+
+.omoss-hero
+{
+    background-image: url(images/mae-mu-seBkyRcFP8M-unsplash.jpg);
+}
+
+.galleri-hero
+{
+    background-image: url(images/brooke-lark-V4MBq8kue3U-unsplash.jpg);
+}
+
+.hem-hero,
+.bak-hero,
+.omoss-hero,
+.galleri-hero
+{
+    padding: 100px 1px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    min-height: 100vh;
+}
+
+.hero-img
+{
+    max-width: 10rem;
+}
+
+.hero-container
+{
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+
+.hero-title,
+.hero-column-left,
+.hero-column-right
+{
+    padding: 2rem 0;
+}
+
+main
+{
+    padding-bottom:5rem;
+}
+
+.main-title
+{
+    padding: 3rem 0 1rem 0;
+}
+
+.contact-main{
+    padding-top: 5rem;
+}
+
+.presentation-section p
+{
+    padding:3rem 0 1rem 0;
+}
+
+.main-intro-img-rev,
+.main-intro-img,
+.galleri-img
+{
+    padding-bottom: 1rem;
+}
+
+.main-intro-rev,
+.main-intro
+{
+    padding-bottom: 4rem;
+}
+
+.galleri-container
+{
+    padding: 3rem 0;
+}
+
+.main-intro-img,
+.main-intro-img-rev,
+.galleri-img
+{
+    height: auto;
+    max-width: 100%;
+}
+
+.intro-text-area{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro-title{
+    padding-bottom: 2rem;
+}
+
+footer{
+    padding-top: 2rem;
+}
+
+.contact-objects{
+    height: auto;
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-area,
+.contact-area-alt
+{
+    padding: 2rem 0;
+}
+
+.intro-container
+{
+    padding-top: 4rem;
+    gap: 5rem;
+}
+
+.intro-presentation-rev,
+.intro-presentation
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro-text-area,
+.contact-info,
+.galleri-card
+{
+    padding-bottom: 2rem;
+}
+
+.creators-container
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/*===============================
+            grid/flex
+=================================*/
+
+/*Grid area*/
+.header-container,
+.main-intro,
+.main-intro-rev,
+.contact-container-top,
+.intro-presentation-rev,
+.intro-presentation,
+.footer-container,
+.contact-area,
+.contact-area-alt,
+.contact-info
+{
+    display: grid;
+}
+
+.footer-container
+{
+    grid-template-rows: auto auto;
+}
+
+.contact-info
+{
+    grid-template-columns: 60px 150px;
+}
+
+/*ett template
+över hur navbarens knappar och loga
+ska vara utplacerade. de tre prickarna tar en plats*/
+.header-container
+{
+    grid-template-areas:
+    "logo ... menu-icon"
+    "menu menu menu"
+}
+
+
+.logo
+{
+    grid-area:logo;
+}
+
+.menu-icon
+{
+    grid-area:menu-icon;
+}
+
+.menu
+{
+    grid-area: menu;
+}
+
+/*Flex area*/
+header,
+.hem-hero,
+.bak-hero,
+.omoss-hero,
+.galleri-hero,
+.hero-container,
+.hero-column-left,
+.hero-column-right,
+.presentation-section,
+main,
+.intro-container,
+.container-alt,
+.contact-main-intro,
+.galleri-container,
+footer,
+.fromthecreators
+{
+    display: flex;
+}
+
+header,
+.hem-hero,
+.bak-hero,
+.omoss-hero,
+.galleri-hero,
+.hero-column-left,
+.hero-column-right,
+.presentation-section,
+main,
+.intro-container,
+.container-alt,
+.contact-main-intro,
+footer,
+.fromthecreators
+{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galleri-container
+{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*===============================
+            button
+=================================*/
+
+.menu-icon
+{
+    /*padding: 24px 20px;*/
+    padding:1.2rem 0 1.8rem 0;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Block används här så att elementen syns*/
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after
+{
+    display: block;
+}
+
+.nav-icon
+{
+    height: 10px;
+    width:40px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+/*
+Before och after skapar ett fejk element som beter
+sig så som den element den är baserad på.
+Får alla dess attributer
+*/
+.nav-icon:before,
+.nav-icon:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.nav-icon:before
+{
+    top:14px;
+}
+
+.nav-icon:after
+{
+    top:-14px;
+}
+
+.menu-btn
+{
+    display: none;
+}
+
+/* ändrar höjden i klassen menu
+animationen i menu-btn påverkar*/
+.menu-btn:checked ~ .menu
+{
+    max-height: 100vh;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon
+{
+    background: transparent;
+}
+
+/*Detta animerar hamburgaren till ett kryss*/
+.menu-btn:checked ~ .menu-icon .nav-icon:before
+{
+    transform: rotate(-220deg);
+    top:0;
+}
+/*Detta animerar hamburgaren till ett kryss*/
+.menu-btn:checked ~ .menu-icon .nav-icon:after
+{
+    transform: rotate(220deg);
+    top:0;
+}
+
+.visit-btn
+{
+    padding: 1rem;
+}
+
+.link-btn
+{
+    padding: 2rem;
+}
+
+/*Knappen till formulären*/
+input[type=submit]
+{
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.visit-btn,
+.link-btn
+{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+/*===============================
+            form
+=================================*/
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset label input{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    box-sizing: border-box;
+}
+
+
+form fieldset label input[type=text]{
+    padding:.2rem;
+}
+
+/*inne i media querries ändrar jag de element med grid och flex
+, hur dessa containers ändrar positionen i innehållet
+för att få sidan responsiv. Här ändrar jag även padding och margins */
+
+
+/*===============================
+        Querrie min-width
+=================================*/
+
+@media (min-width: 500px)
+{
+
+    .header-container,
+    .main-container,
+    .footer-container,
+    .creators-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contact-area,
+    .contact-area-alt
+    {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+    }
+
+}
+
+@media (min-width: 750px)
+{
+    .main-intro-rev,
+    .main-intro
+    {
+        width:100%;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .main-intro-img-rev
+    {
+        margin-left: auto;
+        padding-bottom: 0rem;
+    }
+
+    .main-intro-img
+    {
+        padding-right: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .intro-presentation-rev
+    {
+        padding-right: 2rem;
+    }
+
+    .intro-presentation
+    {
+        padding-left: 2rem;
+    }
+
+    .intro-presentation-rev,
+    .intro-presentation
+    {
+        max-width: 300px;
+    }
+
+    .intro-text-area a
+    {
+        margin-left: auto;
+    }
+
+    .contact-container-top
+    {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width:800px){
+
+    /*menu*/
+    .header-container li
+    {
+        float: left;
+    }
+
+    .link-btn
+    {
+        padding: 20px 30px;
+    }
+
+    .header-container .menu
+    {
+        clear: none;
+        max-height: none;
+    }
+
+    .header-container
+    {
+        grid-template-areas: "logo ... menu";
+    }
+
+    .menu-icon
+    {
+        display: none;
+    }
+}
+
+@media (min-width:1000px)
+{
+    .intro-presentation-rev,
+    .intro-presentation
+    {
+        max-width: 400px;
+    }
+
+    .contact-area
+    {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .contact-area-alt
+    {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+/*===============================
+        Querrie max-width
+=================================*/
+
+@media (max-width: 500px)
+{
+    .contact-area
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:750px)
+{
+    .hero-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-container
+    {
+        align-items: center;
+    }
+
+    /*Gör så att innehållet lägger sig på det sätt
+    med hjälp av grid-templaten*/
+    .main-intro-rev
+    {
+        grid-template-areas:
+        "img-rev"
+        "text-rev";
+    }
+
+    .main-intro-img-rev
+    {
+        grid-area: img-rev;
+    }
+
+    .intro-presentation-rev
+    {
+        grid-area: text-rev;
+    }
+
+    .contact-container-top
+    {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+
+@media (max-width:800px)
+{
+    .link-btn
+    {
+        padding-top: 2rem;
+    }
+
+    .menu
+    {
+        margin: 0;
+    }
+}

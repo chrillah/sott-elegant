@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--En liten kul grej -->
+    <link rel="icon" href="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <!-- Denna div håller ihop alla delar -->
+    <div class="wrapper">
+        <header>
+            <!--Behållare av logga, meny och hamburgaren-->
+            <div class="header-container">
+                <!--Loggan i en a-tag. Det ska hjälpa användaren att hitta hem-->
+                <a href="index.html" class="logo">
+                    <img src="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg" alt="Sött & Elegant">
+                </a>
+                <!-- Det här är en checkbox, det gör att vi kan klicka 
+                så att menyn kan växla storlek-->
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <!-- skapar en defintion, en representation av en element. 
+                    Detta är hamburgaren-->
+                <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+                <!-- här finns länkarna-->
+                <ul class="menu">
+                    <li><a class="link-btn" href="index.html">Hem</a></li>
+                    <li><a class="link-btn" href="bakelser.html">Våra bakverk</a></li>
+                    <li><a class="link-btn" href="galleri.html">Galleri</a></li>
+                    <li><a class="link-btn" href="omoss.html">Om oss</a></li>
+                    <li><a class="link-btn" href="kontakt.html"><span class="current-page">Kontakt</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="contact-main">
+            <!--Behållare av information-->
+            <div class="main-container">
+                <div class="main-presentation">
+                    <h1 class="main-title">Kontakt</h1>
+                </div>
+                <!--Container för top-delen-->
+                <div class="contact-container-top">
+                    <div class="contact-main-intro">
+                        <!--Form-->
+                        <form>
+                            <fieldset>
+                                <legend><strong>Skicka in en förfrågan</strong></legend>
+                                <label>Email:<br><input type="text" name="email"></label><br>
+                                <label>Mobil:<br><input type="text" name="mobil"></label><br>
+                                <label>Telefon:<br><input type="text" name="telefon"></label><br>
+                                <label>Meddelande:<br><textarea rows="5" cols="33"></textarea></label><br>
+                                <input type="submit" value="Skicka in">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!--Container för kontaktinformations-div-->
+                    <div class="contact-main-intro">
+
+                        <!--Container för kontaktinformation-->
+                        <div class="contact-info">
+                            <img src="objects/ikoner_prjk_arb_webb_telephone-icon.svg" alt="Ikon"
+                                class="contact-objects">
+                            <ul class="contact-spec">
+                                <li><strong>Telefonnummer</strong></li>
+                                <li>+46 777 08 08 67</li>
+                            </ul>
+                        </div>
+                        <div class="contact-info">
+                            <img src="objects/ikoner_prjk_arb_webb_wayfinder-icon.svg" alt="Ikon"
+                                class="contact-objects">
+                            <ul class="contact-spec">
+                                <li><strong>Besöksadress</strong></li>
+                                <li>Gågatan 23</li>
+                                <li>123 45 STOCKHOLM</li>
+                            </ul>
+                        </div>
+                        <div class="contact-info">
+                            <img src="objects/ikoner_prjk_arb_webb_sl-icon.svg" alt="Ikon" class="contact-objects">
+                            <ul class="contact-spec">
+                                <li><strong>Tunnelbana</strong></li>
+                                <li>T-Centralen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Div för object, vill att grafiken ska behålla sin storlek,
+                att det ska växa, därför har jag svg-filen som bakgrund-->
+                <div class="ornament-brown"></div>
+            </div>
+        </main>
+        <footer>
+            <!--Container för footer-innehåll-->
+            <div class="footer-container">
+                <div class="footer-header">
+                    <h1 class="footer-title">Här finns vi också</h1>
+                </div>
+                <div class="contact-area-alt">
+                    <div class="container-alt">
+                        <div class="contact-info">
+                            <img src="objects/ikoner_prjk_arb_webb_clock-icon.svg" alt="Ikon" class="contact-objects">
+                            <ul class="contact-spec">
+                                <li><strong>Öppettider</strong></li>
+                                <li>Måndag - Lördag</li>
+                                <li>kl. 07 - 19</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-alt">
+                        <div class="contact-info">
+                            <img src="objects/ikoner_prjk_arb_webb_mail-icon.svg" alt="Ikon" class="contact-objects">
+                            <ul class="contact-spec">
+                                <li><strong>Mejladress</strong></li>
+                                <li>soe@mejladress.se</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="footer-title">Hitta oss på sociala medier
+                    <br>
+                    - knappen tar dig dit
+                </h3>
+                <div class="contact-area">
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_facebook-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_instagram-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitter-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitch-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fromthecreators">
+            <div class="creators-container">
+                <p class="creators-p"><strong>Sött & Elegant AB</strong><i> - En del av något större</i></p>
+                <p class="creators-p">Skynet, Metaverse District 9</p>
+                <p class="creators-p">Black Mailbox Nevada State Route 375</p>
+                <p class="creators-p">Weiland Yutani CORP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

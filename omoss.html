@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--En liten kul grej -->
+    <link rel="icon" href="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg">
+    <title>Om oss</title>
+</head>
+<body>
+    <!-- Denna div håller ihop alla delar -->
+    <div class="wrapper">
+        <header>
+            <!--Behållare av logga, meny och hamburgaren-->
+            <div class="header-container">
+                <!--Loggan i en a-tag. Det ska hjälpa användaren att hitta hem-->
+                <a href="index.html" class="logo">
+                    <img src="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg" alt="Sött & Elegant">
+                </a>
+                           <!-- Det här är en checkbox, det gör att vi kan klicka 
+                så att menyn kan växla storlek-->
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <!-- skapar en defintion, en representation av en element. 
+                    Detta är hamburgaren-->
+                <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+                <!-- här finns länkarna-->
+                <ul class="menu">
+                    <li><a class="link-btn" href="index.html">Hem</a></li>
+                    <li><a class="link-btn" href="bakelser.html">Våra bakelser</a></li>
+                    <li><a class="link-btn" href="galleri.html">Galleri</a></li>
+                    <li><a class="link-btn" href="omoss.html"><span class="current-page">Om oss</span></a></li>
+                    <li><a class="link-btn" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--Intro-del-->
+        <div class="omoss-hero">
+            <div class="hero-container">
+                <div class="hero-column-left">
+                    <h1 class="hero-title">
+                        Hur började allt?
+                        <br>
+                        Och vilka är vi?
+                        <br>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!--Behållare av information-->
+            <div class="main-container">
+                <!--Div för object, vill att grafiken ska behålla sin storlek,
+                att det ska växa, därför har jag svg-filen som bakgrund-->
+                <div class="ornament-green"></div>
+                <div class="main-presentation">
+                    <h1 class="main-title">Om oss</h1>
+                </div>
+                <div class="intro-container">
+                    <section class="main-intro">
+                        <img class="main-intro-img"
+                            src="images/gonzalo-arnaiz-Nd63Kscv2XI-unsplash700x700_thumb.jpg"
+                            alt="Bild på oss, Filippa och Ester">
+                        <div class="intro-presentation">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Det här är jag med min syster</h2>
+                                <p class="intro-p">Min storasyster Filippa, hon som larvar sig med håret, och jag, Ester
+                                    driver sensationen <i>Sött &amp; Elegant.</i>
+                                    Vi är två systrar som bor i Stockholm och tillsammans finner så mycket glädje i att
+                                    skapa kakor och bakelser i alla dess färger, former och storlekar.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="main-intro-rev">
+                        <div class="intro-presentation-rev">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">
+                                    Vänner för livet</h2>
+                                <p class="intro-p">
+                                    Vi älskar att baka och har gjort det sen barnåren. Att vi nu idag får göra det vi älskar att göra, hoppas vi 
+                                    smittar av sig till er genom våra fina bakverk. Att vi dessutom har vuxit upp tillsammans och nu får 
+                                    göra roliga saker som två vuxna galenpannor, vill vi gärna dela med oss av den glädje.
+                                </p>
+                            </div>
+                        </div>
+                        <img class="main-intro-img-rev"
+                            src="images/slashio-photography-0uBlylsBuWk-unsplash700x700.jpg"
+                            alt="Bild på tårtor">
+                    </section>
+                </div>
+                <!--Div för object, vill att grafiken ska behålla sin storlek,
+                att det ska växa, därför har jag svg-filen som bakgrund-->
+                <div class="ornament-green"></div>
+            </div>
+        </main>
+        <footer>
+            <!--Container för footer-innehåll-->
+            <div class="footer-container">
+                <div class="footer-header">
+                    <h1 class="footer-title">Här finns vi</h1>
+                </div>
+                <div class="contact-area">
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_telephone-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Telefonnummer</strong></li>
+                            <li>+46 777 08 08 67</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_clock-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Öppettider</strong></li>
+                            <li>Måndag - Lördag</li>
+                            <li>kl. 07 - 19</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_wayfinder-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Besöksadress</strong></li>
+                            <li>Gågatan 23</li>
+                            <li>123 45 STOCKHOLM</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_mail-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Mejladress</strong></li>
+                            <li>soe@mejladress.se</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="footer-title">Hitta oss på sociala medier
+                    <br>
+                    - knappen tar dig dit
+                </h3>
+                <div class="contact-area">
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_facebook-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_instagram-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitter-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitch-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Här är folket bakom företaget-->
+        <div class="fromthecreators">
+            <div class="creators-container">
+                <p class="creators-p"><strong>Sött & Elegant AB</strong><i> - En del av något större</i></p>
+                <p class="creators-p">Skynet, Metaverse District 9</p>
+                <p class="creators-p">Black Mailbox Nevada State Route 375</p>
+                <p class="creators-p">Weiland Yutani CORP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

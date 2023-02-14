@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--En liten kul grej -->
+    <link rel="icon" href="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg">
+    <title>Våra bakverk</title>
+</head>
+
+<body>
+    <!-- Denna div håller ihop alla delar -->
+    <div class="wrapper">
+        <header>
+            <!--Behållare av logga, meny och hamburgaren-->
+            <div class="header-container">
+                <!--Loggan i en a-tag. Det ska hjälpa användaren att hitta hem-->
+                <a href="index.html" class="logo">
+                    <img src="/objects/ikoner_prjk_arb_webb_soe-logo-alt1.svg" alt="Sött & Elegant">
+                </a>
+                <!-- Det här är en checkbox, det gör att vi kan klicka 
+                så att menyn kan växla storlek-->
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <!-- skapar en defintion, en representation av en element. 
+                    Detta är hamburgaren-->
+                <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+                <!-- här finns länkarna-->
+                <ul class="menu">
+                    <li><a class="link-btn" href="index.html">Hem</a></li>
+                    <li><a class="link-btn" href="bakelser.html"><span class="current-page">Våra bakverk</span></a>
+                    </li>
+                    <li><a class="link-btn" href="galleri.html">Galleri</a></li>
+                    <li><a class="link-btn" href="omoss.html">Om oss</a></li>
+                    <li><a class="link-btn" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--Intro-del-->
+        <div class="bak-hero">
+            <div class="hero-container">
+                <div class="hero-column-left">
+                    <h1 class="hero-title">Kolla in <br> våra bakverk</h1>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!--Behållare av information-->
+            <div class="main-container">
+                <!--Div för object, vill att grafiken ska behålla sin storlek,
+                att det ska växa, därför har jag svg-filen som bakgrund-->
+                <div class="ornament-green"></div>
+                <div class="main-presentation">
+                    <h1 class="main-title">Våra bakverk</h1>
+
+                </div>
+                <div class="intro-container">
+                    <section class="main-intro">
+                        <img class="main-intro-img"
+                            src="images/slashio-photography-T5KPTbbK-_E-unsplash700x700_thumb.jpg"
+                            alt="Bild på en bakelse">
+                        <div class="intro-presentation">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Tårtor</h2>
+                                <p class="intro-p">
+Vi bakar alltifrån klassiska tårtor med en sann Sött&Elegant-anda, specialbeställda roliga varianter inför födelsedagsfirandet eller bröllopstårtor. Bara fantasin sätter gränser! 
+Något vi garanterar är att det blir en smakupplevelse utöver det vanliga. Räkna med att inte nöja dig med en bit, utan en till, och kanske ännu en till… för att det är så gott!</p>
+                            </div>
+                            <a href="kontakt.html" class="visit-btn">Kontakta oss</a>
+                        </div>
+                    </section>
+                    <section class="main-intro-rev">
+                        <div class="intro-presentation-rev">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Cupkakes</h2>
+                                <p class="intro-p">Festliga, färgsprakande och utsökta cupcakes finns att beställa.
+                                    Kanske vill ni överraska jobbkompisarna på några goda cupcakes? Eller varför inte
+                                    spexa till en babyshower eller födelsedagskalas?
+                                    <br>
+                                    <br>
+                                    Kontakta oss, så hjälper vi er
+                                </p>
+                            </div>
+                            <a href="kontakt.html" class="visit-btn">Kontakta oss</a>
+                        </div>
+                        <img class="main-intro-img-rev"
+                            src="images/meritt-thomas-zURPcpLoKA4-unsplash700x700_thumb.jpg"
+                            alt="Bild på en bakelse">
+                    </section>
+                    <section class="main-intro">
+                        <img class="main-intro-img"
+                            src="images/jennifer-burk-HsRtvwORauo-unsplash700x700_thumb.jpg"
+                            alt="Bild på en bakelse">
+                        <div class="intro-presentation">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Kakor</h2>
+                                <p class="intro-p">Spröda och framförallt, vackra kakor gjorda med kärlek. Vår
+                                    spritsexpert Filippa skapar konst som dessutom smakar gudomligt. Vi kan göra
+                                    alla roliga former till smakrika kakor. Tveka inte, kontakta oss och fråga.</p>
+                            </div>
+                            <a href="kontakt.html" class="visit-btn">Kontakta oss</a>
+                        </div>
+                    </section>
+                    <section class="main-intro-rev">
+                        <div class="intro-presentation-rev">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Bullar</h2>
+                                <p class="intro-p">
+                                    Även här bakar vi allt med ekologiska produkter som äkta smör till det finaste
+                                    Ölandsvetet. I vårt sötebrödssortiment finner du ett standardutbud med dom
+                                    saftigaste klassiska kanelbullarna, kardemummabullar eller en frasig ljuvlig nybakt
+                                    croissant. Vi utgår ifrån säsongens råvaror, så det är inte ovanligt att du hittar
+                                    en krämig blåbärsbulle under sensommaren eller en julig saffranskringla under
+                                    vintern.
+                            </div>
+                            <a href="kontakt.html" class="visit-btn">Kontakta oss</a>
+                        </div>
+                        <img class="main-intro-img-rev"
+                            src="images/otto-norin-uG3Vu5TXKxE-unsplash_700x700_thumb.jpg"
+                            alt="Bild på en bakelse">
+                    </section>
+                    <section class="main-intro">
+                        <img class="main-intro-img"
+                            src="images/monika-grabkowska-nVoDL1YDWRE-unsplash_700x700_thumb.jpg"
+                            alt="Bild på en bakelse">
+                        <div class="intro-presentation">
+                            <div class="intro-text-area">
+                                <h2 class="intro-title">Bröd</h2>
+                                <p class="intro-p">
+                                    I vårt sortiment hittar du alltid dagsfärskt bröd bakat på surdeg med de bästa
+                                    ekologiska råvarorna. För oss är det en självklarhet att jobba med närproducerade
+                                    råvaror utan tillsatser. Här hittar du alltifrån baguetter, frallor till olika
+                                    varianter av limpor.
+                                </p>
+                            </div>
+                            <a href="kontakt.html" class="visit-btn">Kontakta oss</a>
+                        </div>
+                    </section>
+                </div>
+                <!--Div för object, vill att grafiken ska behålla sin storlek,
+                att det ska växa, därför har jag svg-filen som bakgrund-->
+                <div class="ornament-green"></div>
+            </div>
+        </main>
+        <footer>
+            <!--Container för footer-innehåll-->
+            <div class="footer-container">
+                <div class="footer-header">
+                    <h1 class="footer-title">Här finns vi</h1>
+                </div>
+                <div class="contact-area">
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_telephone-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Telefonnummer</strong></li>
+                            <li>+46 777 08 08 67</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_clock-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Öppettider</strong></li>
+                            <li>Måndag - Lördag</li>
+                            <li>kl. 07 - 19</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_wayfinder-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Besöksadress</strong></li>
+                            <li>Gågatan 23</li>
+                            <li>123 45 STOCKHOLM</li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_mail-icon.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><strong>Mejladress</strong></li>
+                            <li>soe@mejladress.se</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="footer-title">Hitta oss på sociala medier
+                    <br>
+                    - knappen tar dig dit
+                </h3>
+                <div class="contact-area">
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_facebook-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_instagram-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitter-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-info">
+                        <img src="objects/ikoner_prjk_arb_webb_twitch-logo.svg" alt="Ikon" class="contact-objects">
+                        <ul class="contact-spec">
+                            <li><a class="visit-btn" href="/">Twitch</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Här är folket bakom företaget-->
+        <div class="fromthecreators">
+            <div class="creators-container">
+                <p class="creators-p"><strong>Sött & Elegant AB</strong><i> - En del av något större</i></p>
+                <p class="creators-p">Skynet, Metaverse District 9</p>
+                <p class="creators-p">Black Mailbox Nevada State Route 375</p>
+                <p class="creators-p">Weiland Yutani CORP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
